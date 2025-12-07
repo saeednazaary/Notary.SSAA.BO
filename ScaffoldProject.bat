@@ -1,0 +1,3 @@
+@echo off
+cmd /c ""dotnet" ef dbcontext scaffold --project Notary.SSAA.BO.Infrastructure\Notary.SSAA.BO.Infrastructure.csproj --startup-project Notary.SSAA.BO.WebApi\Notary.SSAA.BO.WebApi.csproj --configuration Debug "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.20.19)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=frdb)));User ID=SSAR_NEW;Password=SSAR_NEW;Persist Security Info=True" Oracle.EntityFrameworkCore --data-annotations --context SsarContext --context-dir Contexts --output-dir ..\Notary.SSAA.BO.Domain\Entities --force --no-onconfiguring --namespace Notary.SSAA.BO.Domain.Entities --context-namespace Notary.SSAA.BO.Infrastructure.Contexts"
+pause

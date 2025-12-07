@@ -1,0 +1,19 @@
+﻿using Notary.SSAA.BO.DataTransferObject.Bases;
+using Notary.SSAA.BO.DataTransferObject.ViewModels.Estate.EstateInquiry;
+using Notary.SSAA.BO.SharedKernel.Result;
+using System.Text.Json.Serialization;
+
+namespace Notary.SSAA.BO.DataTransferObject.Queries.Estate.EstateInquiry
+{
+    public class GetEstateInquiryLastNoQuery : BaseQueryRequest<ApiResult<EstateInquiryLastNoViewModel>>
+    {
+        public GetEstateInquiryLastNoQuery()
+        {
+            
+        }
+        public string Year { get; set; }
+        public string ScriptoriumCode { get; set; }
+        
+
+    }
+}

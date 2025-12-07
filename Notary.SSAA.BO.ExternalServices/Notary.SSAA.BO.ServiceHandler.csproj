@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<WarningLevel>1</WarningLevel>
+		<AnalysisMode>Minimum</AnalysisMode>
+		<NoWarn>8618</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Notary\**" />
+		<EmbeddedResource Remove="Notary\**" />
+		<None Remove="Notary\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Notary.SSAA.BO.DataTransferObject\Notary.SSAA.BO.DataTransferObject.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Person\" />
+	</ItemGroup>
+
+</Project>

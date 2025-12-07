@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<WarningLevel>1</WarningLevel>
+		<AnalysisMode>Minimum</AnalysisMode>
+		<NoWarn>8618</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Commands\ExordiumLeaveRequests\**" />
+		<Compile Remove="DapperQueries\**" />
+		<Compile Remove="ExternalServicesObjects\**" />
+		<Compile Remove="Mappers\Calender\**" />
+		<Compile Remove="Mappers\ExordiumLeaveRequests\**" />
+		<Compile Remove="Queries\ExordiumLeaveRequests\**" />
+		<Compile Remove="Queries\Exordium\**" />
+		<Compile Remove="ServiceObjects\**" />
+		<Compile Remove="Validators\ExordiumLeaveRequests\**" />
+		<Compile Remove="ViewModels\ExordiumLeaveRequests\**" />
+		<Compile Remove="ViewModels\Exordium\**" />
+		<EmbeddedResource Remove="Commands\ExordiumLeaveRequests\**" />
+		<EmbeddedResource Remove="DapperQueries\**" />
+		<EmbeddedResource Remove="ExternalServicesObjects\**" />
+		<EmbeddedResource Remove="Mappers\Calender\**" />
+		<EmbeddedResource Remove="Mappers\ExordiumLeaveRequests\**" />
+		<EmbeddedResource Remove="Queries\ExordiumLeaveRequests\**" />
+		<EmbeddedResource Remove="Queries\Exordium\**" />
+		<EmbeddedResource Remove="ServiceObjects\**" />
+		<EmbeddedResource Remove="Validators\ExordiumLeaveRequests\**" />
+		<EmbeddedResource Remove="ViewModels\ExordiumLeaveRequests\**" />
+		<EmbeddedResource Remove="ViewModels\Exordium\**" />
+		<None Remove="Commands\ExordiumLeaveRequests\**" />
+		<None Remove="DapperQueries\**" />
+		<None Remove="ExternalServicesObjects\**" />
+		<None Remove="Mappers\Calender\**" />
+		<None Remove="Mappers\ExordiumLeaveRequests\**" />
+		<None Remove="Queries\ExordiumLeaveRequests\**" />
+		<None Remove="Queries\Exordium\**" />
+		<None Remove="ServiceObjects\**" />
+		<None Remove="Validators\ExordiumLeaveRequests\**" />
+		<None Remove="ViewModels\ExordiumLeaveRequests\**" />
+		<None Remove="ViewModels\Exordium\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.10.0" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="Serilog" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Notary.SSAA.BO.Domain\Notary.SSAA.BO.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ServiceInputs\Person\" />
+	  <Folder Include="ViewModels\Services\Person\" />
+	</ItemGroup>
+
+</Project>

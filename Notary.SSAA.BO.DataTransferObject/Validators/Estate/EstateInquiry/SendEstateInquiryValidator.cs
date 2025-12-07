@@ -1,0 +1,15 @@
+﻿using FluentValidation;
+using Notary.SSAA.BO.DataTransferObject.Commands.Estate.EstateInquiry;
+
+
+namespace Notary.SSAA.BO.DataTransferObject.Validators.Estate.EstateInquiry
+{
+    public class SendEstateInquiryValidator : AbstractValidator<SendEstateInquiryCommand>
+    {
+        public SendEstateInquiryValidator()
+        {
+            RuleFor(x => x.EstateInquiryId)
+            .NotEmpty().WithMessage("شناسه استعلام اجباری است");
+        }
+    }
+}

@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<WarningLevel>1</WarningLevel>
+		<AnalysisMode>Minimum</AnalysisMode>
+		<NoWarn>8618</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Persistence\Configurations\**" />
+		<EmbeddedResource Remove="Persistence\Configurations\**" />
+		<None Remove="Persistence\Configurations\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="InfrastructureBootstrapper.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Persistence\SQLQueries\SignRequestQuery.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.11.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.11.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.11.0" />
+		<PackageReference Include="Polly" Version="8.4.2" />
+		<PackageReference Include="Polly.Contrib.WaitAndRetry" Version="1.1.1" />
+		<PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+		<PackageReference Include="Dapper" Version="2.1.35" />
+		<PackageReference Include="EasyCaching.InMemory" Version="1.9.2" />
+		<PackageReference Include="EFCoreSecondLevelCacheInterceptor" Version="4.8.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.10" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Oracle.EntityFrameworkCore" Version="8.23.60" />
+		<PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.6.0" />
+		<PackageReference Include="Pluralize.NET" Version="1.0.2" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.6" />
+		<PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="8.103.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Notary.SSAA.BO.Domain\Notary.SSAA.BO.Domain.csproj" />
+		<ProjectReference Include="..\Notary.SSAA.BO.SharedKernel\Notary.SSAA.BO.SharedKernel.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Services\Implementations\ApplicationIdGenerator\" />
+	</ItemGroup>
+
+</Project>
