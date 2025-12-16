@@ -1,0 +1,27 @@
+﻿using Notary.SSAA.BO.DataTransferObject.Bases;
+using Notary.SSAA.BO.Domain.RepositoryObjects.Bases;
+using Notary.SSAA.BO.SharedKernel.Result;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Notary.SSAA.BO.DataTransferObject.Queries.Lookups
+{
+    public class DocumentSupportiveTypeLookupQuery : BaseQueryRequest<ApiResult<BaseLookupRepositoryObject>>
+    {
+        public DocumentSupportiveTypeLookupQuery() 
+        {
+            GridSortInput = new List<SortData>();
+            GridFilterInput = new List<SearchData>();
+            SelectedItems = new List<string>();
+        }
+        public IList<string> SelectedItems { get; set; }
+        public int PageIndex { get; set; }
+        public int PageSize { get; set; }
+        public ICollection<SortData> GridSortInput { get; set; }
+        public ICollection<SearchData> GridFilterInput { get; set; }
+        public string GlobalSearch { get; set; }
+    }
+}

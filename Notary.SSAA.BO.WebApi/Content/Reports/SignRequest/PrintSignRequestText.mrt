@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="1">
+      <ONotarySignReqPishEntity Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>ONotarySignReqPishEntity</Alias>
+        <BusinessObjects isList="true" count="2">
+          <SignablePerson Ref="3" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+            <Alias>SignablePerson</Alias>
+            <BusinessObjects isList="true" count="0" />
+            <Category />
+            <Columns isList="true" count="1">
+              <value>ORIGINAL,FullName,FullName,FullName,System.String,_x0030_e4f44a5de994a14977969cf4f2946b3</value>
+            </Columns>
+            <Dictionary isRef="1" />
+            <Guid>e5e85a314b2b44ce976aaf98a3c4136a</Guid>
+            <Name>SignablePerson</Name>
+          </SignablePerson>
+          <Persons Ref="4" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+            <Alias>Persons</Alias>
+            <BusinessObjects isList="true" count="0" />
+            <Category />
+            <Columns isList="true" count="1">
+              <value>ORIGINAL,PersonDescription,PersonDescription,PersonDescription,System.String,_x0039_e9a967257324f95b66713af1fa30ec7</value>
+            </Columns>
+            <Dictionary isRef="1" />
+            <Guid>96ce4475f1d840258f81519bad929de9</Guid>
+            <Name>Persons</Name>
+          </Persons>
+        </BusinessObjects>
+        <Category>ONotarySignReqPishEntity</Category>
+        <Columns isList="true" count="6">
+          <value>ORIGINAL,Title,Title,Title,System.String,_x0038_0c770e9a13242bba775f96a671d8507</value>
+          <value>ORIGINAL,Desc,Desc,Desc,System.String,_x0036_afca61b936a4f4a8ca0d410a4f70fb7</value>
+          <value>ORIGINAL,LegacyCode,LegacyCode,LegacyCode,System.String,ca1c51eda0f8453bae47e4ddb6268840</value>
+          <value>SignGetter,System.String</value>
+          <value>ORIGINAL,Text,Text,Text,System.String,dd2625a15091441b98cc75eb08640b0b</value>
+          <value>KafilNameFamily,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>1126632a92df41b8a883212d0590ea7e</Guid>
+        <Key>f54992cf6257474cb9dc069709104d4a</Key>
+        <Name>ONotarySignReqPishEntity</Name>
+      </ONotarySignReqPishEntity>
+    </BusinessObjects>
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>7b5380c3ab994a4687c31fe3d6d2c028</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="3">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.49,1.5</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text20 Ref="7" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.3,0.3,2.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,7,Bold</Font>
+              <Guid>bfe32fe5976c471488245ead6d0ed477</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{ONotarySignReqPishEntity.Title}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="8" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.7,0.5,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,7,Bold</Font>
+              <Guid>600fa5b033544ee3b56f958bcf22abd4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{ONotarySignReqPishEntity.SignGetter}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text37 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <ClientRectangle>0.2,0.7,2.3,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,9.75</Font>
+              <Guid>30fa66cf476e4b41b688b97774fed23e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{ONotarySignReqPishEntity.Desc}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text24 Ref="10" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>5.7,0.9,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,8.25,Regular,Point,False,178</Font>
+              <Guid>8cc09c1bbbf94a3eb614eacb5b7d653d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>محل امضا و مهر دفترخانه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text5 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.3,0.7,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{ONotarySignReqPishEntity.LegacyCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+            </Text5>
+            <Text7 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.3,1.1,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{ONotarySignReqPishEntity.KafilNameFamily}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,0.1,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Nazanin,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>گواهی امضا</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>50821233645b4d3b8d9d0ae7ee49ad0a</Guid>
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="14" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.11,7.49,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text38 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.3,0.59,2.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Nazanin,10,Bold</Font>
+              <Guid>9d30db67ab0c4543a682a3f2f503139d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="5" />
+              <Parent isRef="14" />
+              <Text>صفحه {PageNumber} از {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text38>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>418c01642e8e4a27b7566d7c5763da40</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <DataBand1 Ref="16" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>1126632a92df41b8a883212d0590ea7e</BusinessObjectGuid>
+          <ClientRectangle>0,2.1,7.49,0.36</ClientRectangle>
+          <Components isList="true" count="3">
+            <Shape3 Ref="17" type="Shape" isKey="true">
+              <BackgroundColor>Transparent</BackgroundColor>
+              <BorderColor>DarkGray</BorderColor>
+              <Brush>Gainsboro</Brush>
+              <ClientRectangle>0,0,7.48,0.28</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>304912d69c894954973fbbbf1ea5e0ac</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Shape3</Name>
+              <Page isRef="5" />
+              <Parent isRef="16" />
+              <ShapeType Ref="18" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+              <Style>None</Style>
+            </Shape3>
+            <Text3 Ref="19" type="Text" isKey="true">
+              <Border>All;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.47,0.28</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Nazanin,10,Bold</Font>
+              <Guid>8e4a5212d9884c27a7305c7c667f4e73</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,3</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="16" />
+              <Text>متقاضی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text3>
+            <SubReport2 Ref="20" type="SubReport" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.28,7.47,0.1</ClientRectangle>
+              <Components isList="true" count="0" />
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Guid>c3b0257f0dec40a6ada11e93a5025259</Guid>
+              <Name>SubReport2</Name>
+              <Page isRef="5" />
+              <Parameters isList="true" count="0" />
+              <Parent isRef="16" />
+              <SubReportPageGuid>6852be7a37184069ac88207119d26a67</SubReportPageGuid>
+              <SubReportUrl />
+            </SubReport2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Guid>de6687aa1de04a5684f7c731e4ce3231</Guid>
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <DataBand2 Ref="21" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>1126632a92df41b8a883212d0590ea7e</BusinessObjectGuid>
+          <CanBreak>True</CanBreak>
+          <ClientRectangle>0,2.86,7.49,0.56</ClientRectangle>
+          <Components isList="true" count="3">
+            <Shape2 Ref="22" type="Shape" isKey="true">
+              <BackgroundColor>Transparent</BackgroundColor>
+              <BorderColor>242, 242, 242</BorderColor>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0,0,7.47,0.28</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>2b70f28d73d8442fa33985a195fd29bd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Shape2</Name>
+              <Page isRef="5" />
+              <Parent isRef="21" />
+              <ShapeType Ref="23" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+              <Style>None</Style>
+            </Shape2>
+            <Text2 Ref="24" type="Text" isKey="true">
+              <Border>All;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.47,0.28</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Nazanin,10,Bold</Font>
+              <Guid>c5774b5eba1f4d38943b3d299a139994</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="21" />
+              <Text>متن</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <txtLegalText Ref="25" type="Text" isKey="true">
+              <Border>All;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0.28,7.47,0.28</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Nazanin,10</Font>
+              <Guid>05a8db5b916d4504a806895aa13663df</Guid>
+              <Margins>5,5,5,5</Margins>
+              <Name>txtLegalText</Name>
+              <Page isRef="5" />
+              <Parent isRef="21" />
+              <Text>{ONotarySignReqPishEntity.Text}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <TextQuality>Typographic</TextQuality>
+              <Type>DataColumn</Type>
+            </txtLegalText>
+          </Components>
+          <Conditions isList="true" count="1">
+            <value>ONotarySignReqPishEntity.Text,EqualTo,,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
+          </Conditions>
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <Name>DataBand2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <DataBand3 Ref="26" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>1126632a92df41b8a883212d0590ea7e</BusinessObjectGuid>
+          <CanBreak>True</CanBreak>
+          <ClientRectangle>0,3.82,7.49,0.16</ClientRectangle>
+          <Components isList="true" count="1">
+            <SubReport1 Ref="27" type="SubReport" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.02,7.48,0.1</ClientRectangle>
+              <Components isList="true" count="0" />
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>SubReport1</Name>
+              <Page isRef="5" />
+              <Parameters isList="true" count="0" />
+              <Parent isRef="26" />
+              <SubReportPageGuid>b1192141f01a4576961d689d38706e8d</SubReportPageGuid>
+              <SubReportUrl />
+            </SubReport1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Guid>366561b785cf47cdbba692cba765eb98</Guid>
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <Name>DataBand3</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>18bcecc5cc4f4ab5a7cbdeb9f1790ffc</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+    <subReport_1 Ref="28" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand6 Ref="29" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>96ce4475f1d840258f81519bad929de9</BusinessObjectGuid>
+          <CanBreak>True</CanBreak>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,0.2,7.47,0.41</ClientRectangle>
+          <Components isList="true" count="1">
+            <Panel4 Ref="30" type="Panel" isKey="true">
+              <Border>All;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,7.27,0.4</ClientRectangle>
+              <Components isList="true" count="2">
+                <Panel5 Ref="31" type="Panel" isKey="true">
+                  <Border>All;[127:127:127];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanBreak>True</CanBreak>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>7,0,0.48,0.4</ClientRectangle>
+                  <Components isList="true" count="1">
+                    <Text4 Ref="32" type="Text" isKey="true">
+                      <Border>Top, Left, Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+                      <Brush>White</Brush>
+                      <CanBreak>True</CanBreak>
+                      <CanShrink>True</CanShrink>
+                      <ClientRectangle>0,0,0.45,0.4</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>Nazanin,9.75,Bold,Point,False,178</Font>
+                      <GrowToHeight>True</GrowToHeight>
+                      <Guid>5e93f468f1d24583abc9135d0fb0a2c5</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text4</Name>
+                      <Page isRef="28" />
+                      <Parent isRef="31" />
+                      <Text>{Line}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text4>
+                  </Components>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>21821938029f4d3db3fc4ebd05fd7214</Guid>
+                  <Name>Panel5</Name>
+                  <Page isRef="28" />
+                  <Parent isRef="30" />
+                </Panel5>
+                <Text13 Ref="33" type="Text" isKey="true">
+                  <Border>Right;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanBreak>True</CanBreak>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>0,0,7,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Nazanin,10</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,5,0,5</Margins>
+                  <Name>Text13</Name>
+                  <Page isRef="28" />
+                  <Parent isRef="30" />
+                  <Text>{ONotarySignReqPishEntity.Persons.PersonDescription}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+                  <TextQuality>Typographic</TextQuality>
+                  <Type>Expression</Type>
+                </Text13>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Guid>ba8e5387776342b984e74eaa0e1a06c6</Guid>
+              <Name>Panel4</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+            </Panel4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Guid>17b28a09e993440bbdb453b5cfcfe644</Guid>
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <Name>DataBand6</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+          <Sort isList="true" count="0" />
+        </DataBand6>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>6852be7a37184069ac88207119d26a67</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>subReport_1</Name>
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.25</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </subReport_1>
+    <subReport_2 Ref="34" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand5 Ref="35" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>e5e85a314b2b44ce976aaf98a3c4136a</BusinessObjectGuid>
+          <CanBreak>True</CanBreak>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,0.2,7.48,0.88</ClientRectangle>
+          <Columns>4</Columns>
+          <Components isList="true" count="1">
+            <Panel1 Ref="36" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0,-0.02,1.87,0.88</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text1 Ref="37" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.57,1.86,0.3</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Nazanin,10</Font>
+                  <Guid>009e52174b8548a593f36e1429e44728</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text1</Name>
+                  <Page isRef="34" />
+                  <Parent isRef="36" />
+                  <Text>{ONotarySignReqPishEntity.SignablePerson.FullName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextQuality>Typographic</TextQuality>
+                  <VertAlignment>Center</VertAlignment>
+                </Text1>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <GrowToHeight>True</GrowToHeight>
+              <Name>Panel1</Name>
+              <Page isRef="34" />
+              <Parent isRef="35" />
+            </Panel1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <Name>DataBand5</Name>
+          <Page isRef="34" />
+          <Parent isRef="34" />
+          <PrintAtBottom>True</PrintAtBottom>
+          <PrintOnAllPages>True</PrintOnAllPages>
+          <RightToLeft>True</RightToLeft>
+          <Sort isList="true" count="0" />
+        </DataBand5>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>b1192141f01a4576961d689d38706e8d</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>subReport_2</Name>
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.26</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </subReport_2>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/6/2025 10:30:30 AM</ReportChanged>
+  <ReportCreated>9/10/2025 9:30:23 AM</ReportCreated>
+  <ReportFile>F:\Ansari\NewSource\Repos\Ssar\boLASTssar\Notary.SSAA.BO.WebApi\Content\Reports\SignRequest\PrintSignRequestText.mrt</ReportFile>
+  <ReportGuid>bbff3a28919d41359a5c43faa1ad5527</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

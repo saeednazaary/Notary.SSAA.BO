@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<WarningLevel>1</WarningLevel>
+		<AnalysisMode>Minimum</AnalysisMode>
+		<NoWarn>8618</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="SourceAFIS" Version="3.14.0" />
+		<PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2023.1.1" />
+		<PackageReference Include="MiniProfiler.AspNetCore" Version="4.3.8" />
+		<PackageReference Include="SkiaSharp" Version="2.88.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Stimulsoft.Base.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Stimulsoft.Report.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Stimulsoft.Report.Web.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Stimulsoft.Report.WebDesign.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿using Notary.SSAA.BO.DataTransferObject.Bases;
+using Notary.SSAA.BO.DataTransferObject.ViewModels.Services.Person;
+using Notary.SSAA.BO.SharedKernel.Result;
+
+namespace Notary.SSAA.BO.DataTransferObject.ServiceInputs.Person
+{
+    public class GetPersonServiceListServiceInput : BaseExternalRequest<ApiResult<GetPersonServiceListViewModel>>
+    {
+        public IList<string> NationalNos { get; set; }
+        public string ClientId { get; set; } = "SSAR";
+        public string MainObjectId { get; set; }
+
+    }
+}
